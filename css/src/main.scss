@@ -11,26 +11,32 @@ h1, h2, h3, h4 {
   font-family: Arial, sans-serif;
 }
 body {
-  background-color: black;
+  background-color: #737373;
+  width: 100%;
+}
+.container-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 20px;
+  box-sizing: border-box;
   width: 100%;
 }
 .intro {
   color: white;
-  background:
-    linear-gradient(
-    rgba(0, 0, 0, .6),
-    rgba(0, 0, 0, .7)
-    ),
-    url("http://i.imgur.com/uLET3f8.jpg");
+  background: #70727c; /* Old browsers */
+  background: -moz-linear-gradient(top, #70727c 0%, #34423f 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #70727c 0%,#34423f 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #70727c 0%,#34423f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   background-position: center;
   background-attachment: fixed;
   height: 100vh;
   margin: 0 auto;
   text-align: center;
+  position: relative;
   h1 {
-    padding-top: 40vh;
     font-size: 6em;
-    font-family: 'Neuton', serif;
     letter-spacing: 4px;
   }
   h3 {
@@ -76,19 +82,31 @@ body {
 }
 .work {
   background: white;
-  h2 {
+  #workCategories {
     text-align: center;
     padding: 0px 0;
-    font-family: 'Neuton', serif;
     opacity: .75;
+    span {
+      font-family: $header-font;
+      font-weight: bold;
+      font-size: 24px;
+      padding: 0 10px;
+    }
+    &.active:after {
+      content: '___';
+      display: block;
+    }
   }
   .container {
     padding: 10px 10px;
   }
   .portfolio-item {
     width: 100%;
-    display: inline-block;
     padding-top: 30px;
+    display: none;
+    &.show{
+      display: inline-block;
+    }
     .meta {
       width: 90%;
       margin: 0 auto;
@@ -129,6 +147,7 @@ body {
 
 .contact {
   height: 100vh;
+  position: relative;
   background: 
     linear-gradient(
     rgba(0, 0, 0, .6),
@@ -138,6 +157,10 @@ body {
   h2 {
     padding: 20px 0;
     text-align: center;
+    &:after {
+      content: '___';
+      display: block;
+    }
   }
   .contactForm {
     margin: 0 auto;

@@ -1,75 +1,100 @@
 <html lang="en" class="no-js cookie_used_true">
     <head>
         <meta charset="UTF-8">
-        <title>[FreeCodeCamp] Portfolio</title>
-        <link rel="stylesheet" media="all" href="css/dest/main.css" />
+        <title>Tim Fau | Front End Web Developer</title>
+        <link rel="stylesheet" media="all" href="css/dest/styles.min.css" />
+        <script src="js/plugins/three.r92.min.js"></script>
+        <script src="js/plugins/vanta.waves.min.js"></script>
+        <script src="js/dest/scripts.min.js" defer></script>
     </head>
 
     <body>
-        <div class="intro">
-            <h1>Tim Fau</h1>
-            <h3>Web Design/Development</h3>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/tim-fau-10030151/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                <li><a href="https://github.com/TimFau" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                <li><a href="https://codepen.io/TimFau/" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
-            </ul>
-            <div class="menu">
-                <span>Check out my <a href="#work">featured projects</a> <span class="inTouch">and <a href="#contact">get in touch</a></span>.</span>
+        <div id="intro" class="intro">
+            <div class="container-center">
+                <h1>Tim Fau</h1>
+                <h3>Front End Web Developer</h3>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/tim-fau-10030151/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><a href="https://github.com/TimFau" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="https://codepen.io/TimFau/" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+                </ul>
+                <div class="menu">
+                    <span>Check out my <a href="#work">featured projects</a> <span class="inTouch">and <a href="#contact">get in touch</a></span>.</span>
+                </div>
             </div>
             <i class="fa fa-angle-double-down" aria-hidden="true"></i>
         </div>
         
         <div class="work" id="work">
             <div class="container">
-                <h2 class="section_name">Featured Projects<br>___</h2>
-                <div class="portfolio-item">
-                <div class="img">
-                    <img src="http://faudesign.com/wp-content/uploads/2017/05/PuttyTribe.jpg">
+                <div id="workCategories">
+                    <span id="featured">Featured</span>
+                    <span id="frontEnd">Front End</span>
+                    <span id="javascript">React/Javascript</span>
+                    <span id="design">Design</span>
                 </div>
-                <div class="meta">
-                    <h3>The Puttytribe</h3>
-                    <h4><em>HTML | CSS | Javascript | Discourse | Wordpress</em></h4>
-                    <p>The Puttytribe is a member-only online community for multipotentialites. Their old website was powered by Ning, which they wanted to get away from in favor of a solution with more freedom and room to develop as needed. I got the opportunity to join their team as the Front End Web Developer as we built a custom solution with WordPress and Discourse.</p>
-                    <button><a href="http://faudesign.com/the-puttytribe/">View More</a></button>
+                <div class="portfolio-item frontend-project">
+                    <div class="img">
+                        <img src="http://faudesign.com/wp-content/uploads/2017/05/PuttyTribe.jpg">
+                    </div>
+                    <div class="meta">
+                        <h3>The Puttytribe</h3>
+                        <h4><em>HTML | CSS | Javascript | Discourse | Wordpress</em></h4>
+                        <p>The Puttytribe is a member-only online community for multipotentialites. Their old website was powered by
+                            Ning, which they wanted to get away from in favor of a solution with more freedom and room to develop as
+                            needed. I got the opportunity to join their team as the Front End Web Developer as we built a custom
+                            solution with WordPress and Discourse.</p>
+                        <button><a href="http://faudesign.com/the-puttytribe/">View More</a></button>
+                    </div>
                 </div>
+                <div class="portfolio-item frontend-project design-project">
+                    <div class="img">
+                        <img src="http://faudesign.com/wp-content/uploads/2017/05/Numotus.jpg">
+                    </div>
+                    <div class="meta">
+                        <h3>Numotus</h3>
+                        <h4><em>HTML | CSS | Couch CMS</em></h4>
+                        <p>Numotus wanted a one page responsive website to showcase his music/shows and establish a professional online
+                            presence. I built a one-page site from scratch and then used Couch CMS to give him an easy way to manage his
+                            own content. He wanted the video playlist to be a central element on the site, so I added it above the
+                            floating nav bar in the starting viewport. Most of the content is aggregated from his various online handles
+                            leading to minimal site maintenance.</p>
+                        <button><a href="http://numotus.com/">Visit Website</a></button>
+                    </div>
                 </div>
-                    <div class="portfolio-item">
-                <div class="img">
-                    <img src="http://faudesign.com/wp-content/uploads/2017/05/Numotus.jpg">
-                </div>
-                <div class="meta">
-                    <h3>Numotus</h3>
-                    <h4><em>HTML | CSS | Couch CMS</em></h4>
-                    <p>Numotus wanted a one page responsive website to showcase his music/shows and establish a professional online presence.  I built a one-page site from scratch and then used Couch CMS to give him an easy way to manage his own content. He wanted the video playlist to be a central element on the site, so I added it above the floating nav bar in the starting viewport. Most of the content is aggregated from his various online handles leading to minimal site maintenance.</p>
-                    <button><a href="http://numotus.com/">Visit Website</a></button>
-                </div>
-                </div>
-                    <div class="portfolio-item">
-                <div class="img">
-                    <img src="http://faudesign.com/wp-content/uploads/2017/05/RWP.jpg">
-                </div>
-                <div class="meta">
-                    <h3>Rockin’ With Purpose </h3>
-                    <h4><em>HTML | CSS | Wordpress</em></h4>
-                    <p>Rockin’ with Purpose is a music blog geared towards promoting Christian Rock and Roll with purpose. They were looking for a hip new image for the site, taking it from a simple free-template blog to a scalable, hip web magazine. I designed a from-scratch WordPress template featuring most prominently a featured & recent content section, as well as spots for album and artist spotlights. It’s built to be responsive and allow for easy viewing of and by categories.</p>
-                    <button><a href="http://rockinwithpurpose.com/">Visit Website</a></button>
-                </div>
+                <div class="portfolio-item featured-project frontend-project design-project show">
+                    <div class="img">
+                        <img src="http://faudesign.com/wp-content/uploads/2017/05/RWP.jpg">
+                    </div>
+                    <div class="meta">
+                        <h3>Rockin’ With Purpose </h3>
+                        <h4><em>HTML | CSS | Wordpress</em></h4>
+                        <p>Rockin’ with Purpose is a music blog geared towards promoting Christian Rock and Roll with purpose. They were
+                            looking for a hip new image for the site, taking it from a simple free-template blog to a scalable, hip web
+                            magazine. I designed a from-scratch WordPress template featuring most prominently a featured & recent
+                            content section, as well as spots for album and artist spotlights. It’s built to be responsive and allow for
+                            easy viewing of and by categories.</p>
+                        <button><a href="http://rockinwithpurpose.com/">Visit Website</a></button>
+                    </div>
                 </div>
             </div>
         </div>
         
         <div class="contact" id="contact">
-        <h2>Contact Me<br>___</h2>
-        <div class="contactForm">
-        <label for="name">Name</label><br>
-        <input type="text" name="name"><br>
-        <label for="email">Email</label><br>
-        <input type="text" name="email"><br>
-        <label for="message">Message</label><br>
-            <textarea name="message"></textarea><br>
-            <button type="submit" value="submit">Submit</button>
-        </div>
+            <div class="container">
+                <h2>Contact Me</h2>
+                <div class="contactForm">
+                    <form action="https://formspree.io/xrggnqdg" method="POST">
+                        <label for="name">Name</label>
+                        <input type="text" name="name">
+                        <label for="email">Email</label>
+                        <input type="email" name="_replyto">
+                        <label for="message">Message</label>
+                        <textarea name="message"></textarea>
+                        <button type="submit" value="Send">Submit</button>
+                    </form>
+                </div>
+            </div>
         </div>
         
     <style>
