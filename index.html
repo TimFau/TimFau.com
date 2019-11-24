@@ -28,14 +28,28 @@
         <div class="work" id="work">
             <div class="container">
                 <div id="workCategories">
-                    <span id="featured">Featured</span>
-                    <span id="frontEnd">Front End</span>
-                    <span id="javascript">React/Javascript</span>
+                    <span id="featured" class="active">Featured</span>
+                    <span id="frontEnd">Websites</span>
+                    <span id="javascript">Web Apps</span>
                     <span id="design">Design</span>
                 </div>
-                <div class="portfolio-item frontend-project">
+                <div class="portfolio-item javascript-project featured-project show">
                     <div class="img">
-                        <img src="http://faudesign.com/wp-content/uploads/2017/05/PuttyTribe.jpg">
+                        <img src="images/language_learning_app.png">
+                    </div>
+                    <div class="meta">
+                        <h3>Language Learning App</h3>
+                        <h4><em>CSS | Javascript | React</em></h4>
+                        <p>
+                            A personal project I'm working on to help me practice vocabulary and grammar for new languages, pulling the words from Google Sheets documents. Idea came after seeing <a href="https://www.reddit.com/r/lifehacks/comments/b81zqh/using_google_sheets_to_translate_batches_of_words/" target="_blank">this tip</a>. I liked having a list to add all the words I wanted to learn, but wanted a way to quiz myself on them. Project still in development; I have a lot of ideas for functionality I still want to add and I'm still adressing some bugs.
+                        </p>
+                        <button><a href="https://timfau.github.io/language-learning-app/" target="_blank">Visit Website</a></button>
+                        <button><a href="https://github.com/TimFau/language-learning-app" target="_blank">View Source</a></button>
+                    </div>
+                </div>
+                <div class="portfolio-item frontend-project featured-project show">
+                    <div class="img">
+                        <img src="https://faudesign.com/wp-content/uploads/2017/05/PuttyTribe.jpg">
                     </div>
                     <div class="meta">
                         <h3>The Puttytribe</h3>
@@ -44,12 +58,12 @@
                             Ning, which they wanted to get away from in favor of a solution with more freedom and room to develop as
                             needed. I got the opportunity to join their team as the Front End Web Developer as we built a custom
                             solution with WordPress and Discourse.</p>
-                        <button><a href="http://faudesign.com/the-puttytribe/">View More</a></button>
+                        <button><a href="https://faudesign.com/the-puttytribe/" target="_blank">View More</a></button>
                     </div>
                 </div>
                 <div class="portfolio-item frontend-project design-project">
                     <div class="img">
-                        <img src="http://faudesign.com/wp-content/uploads/2017/05/Numotus.jpg">
+                        <img src="https://faudesign.com/wp-content/uploads/2017/05/Numotus.jpg">
                     </div>
                     <div class="meta">
                         <h3>Numotus</h3>
@@ -59,12 +73,12 @@
                             own content. He wanted the video playlist to be a central element on the site, so I added it above the
                             floating nav bar in the starting viewport. Most of the content is aggregated from his various online handles
                             leading to minimal site maintenance.</p>
-                        <button><a href="http://numotus.com/">Visit Website</a></button>
+                        <button><a href="https://numotus.com/" target="_blank">Visit Website</a></button>
                     </div>
                 </div>
-                <div class="portfolio-item featured-project frontend-project design-project show">
+                <div class="portfolio-item frontend-project design-project">
                     <div class="img">
-                        <img src="http://faudesign.com/wp-content/uploads/2017/05/RWP.jpg">
+                        <img src="https://faudesign.com/wp-content/uploads/2017/05/RWP.jpg">
                     </div>
                     <div class="meta">
                         <h3>Rockin’ With Purpose </h3>
@@ -74,10 +88,55 @@
                             magazine. I designed a from-scratch WordPress template featuring most prominently a featured & recent
                             content section, as well as spots for album and artist spotlights. It’s built to be responsive and allow for
                             easy viewing of and by categories.</p>
-                        <button><a href="http://rockinwithpurpose.com/">Visit Website</a></button>
+                        <button><a href="http://rockinwithpurpose.com/" target="_blank">Visit Website</a></button>
                     </div>
                 </div>
+                <div class="portfolio-item javascript-project">
+                    <div class="img">
+                        <img src="images/react_random_quote_machine.png">
+                    </div>
+                    <div class="meta">
+                        <h3>Random Quote Machine</h3>
+                        <h4><em>CSS | Javascript | React</em></h4>
+                        <p>
+                            Project for Free Code Camp's Front End Libraries Project.
+                            <span><strong>Objective: </strong>To build a 'quote machine' using React that generates a new quote every time you click a button and that allows you to share it on Twitter. View full objective <a href="https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-random-quote-machine" target="_blank">here</a>.</span>
+                        </p>
+                        <button><a href="https://timfau.github.io/random-quote-machine/" target="_blank">Visit Website</a></button>
+                        <button><a href="https://github.com/TimFau/random-quote-machine" target="_blank">View Source</a></button>
+                    </div>
+                </div>
+                <div class="portfolio-item javascript-project featured-project show">
+                        <div class="img">
+                            <img src="images/drum_machine.png">
+                        </div>
+                        <div class="meta">
+                            <h3>Drum Machine</h3>
+                            <h4><em>CSS | Javascript | React</em></h4>
+                            <p>
+                                Project for Free Code Camp's Front End Libraries Project.
+                                <span><strong>Objective: </strong>To build a 'drum machine' using React with 9 clickable drum pag elements that play an audio sample on click. They should also be triggered using keys on the keyboard and show the sound & key in the display when played. View full objective <a href="https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-drum-machine" target="_blank">here</a>.</span>
+                            </p>
+                            <button><a href="https://timfau.github.io/drum-machine/" target="_blank">Visit Website</a></button>
+                            <button><a href="https://github.com/TimFau/drum-machine" target="_blank">View Source</a></button>
+                        </div>
+                </div>
+                <div class="portfolio-item javascript-project">
+                        <div class="img">
+                            <img src="images/pomodoro_clock.png">
+                        </div>
+                        <div class="meta">
+                            <h3>Pomodoro Clock</h3>
+                            <h4><em>CSS | Javascript | React</em></h4>
+                            <p>
+                                Project for Free Code Camp's Front End Libraries Project.
+                                <span><strong>Objective: </strong>To build a functioning Pomodoro clock using React. View full objective <a href="https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-pomodoro-clock" target="_blank">here</a>.</span>
+                            </p>
+                            <button><a href="https://codepen.io/TimFau/full/abbGaLJ" target="_blank">View on Codepen</a></button>
+                        </div>
+                </div>
             </div>
+            
         </div>
         
         <div class="contact" id="contact">
