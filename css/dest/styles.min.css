@@ -36,20 +36,24 @@ body {
   text-align: center;
   position: relative; }
   .intro h1 {
-    font-size: 6em;
+    font-size: 5em;
     letter-spacing: 4px; }
   .intro h3 {
     font-family: Arial, sans-serif; }
   .intro .fa-angle-double-down {
     font-size: 50px;
     position: absolute;
-    bottom: 25px;
     animation: bounce 0.5s infinite linear; }
+    .intro .fa-angle-double-down:before {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0px; }
   .intro ul {
     padding-top: 20px; }
   .intro ul li {
     display: inline;
-    padding-right: 10px;
+    padding: 0 5px 0 5px;
     font-size: 35px; }
     .intro ul li:hover {
       opacity: .75; }
@@ -60,13 +64,13 @@ body {
 
 @keyframes bounce {
   0% {
-    bottom: 55px; }
+    bottom: 45px; }
   50% {
-    bottom: 40px; }
-  70% {
     bottom: 30px; }
+  70% {
+    bottom: 10px; }
   100% {
-    bottom: 55px; } }
+    bottom: 45px; } }
 
 .menu {
   padding-top: 60px;
@@ -183,6 +187,8 @@ body {
     cursor: pointer; }
 
 @media screen and (min-width: 800px) {
+  .intro h1 {
+    font-size: 6em; }
   .work .container {
     padding: 25px 25px;
     margin-left: 6%;
@@ -199,15 +205,3 @@ body {
   .contact .contactForm {
     margin: 0 auto;
     width: 50%; } }
-
-@media screen and (max-width: 350px) {
-  .fa-angle-double-down:before {
-    display: none; } }
-
-@media screen and (max-height: 750px) {
-  .intro h1 {
-    padding-top: 25vh; } }
-
-@media screen and (max-height: 550px) {
-  .fa-angle-double-down:before {
-    display: none; } }

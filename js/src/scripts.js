@@ -7,6 +7,10 @@ document.addEventListener("DOMContentLoaded", function() {
     function portfolioClickHandler(e) {
         var portfolioItems = document.querySelectorAll('.portfolio-item');
         var targetItems = document.querySelectorAll('.' + e.target.id + '-project');
+        if (e.target.id === 'all') {
+            targetItems = portfolioItems;
+        }
+        console.log(e.target.id);
         for (var i = 0; i < portfolioSelectors.length; i++) {
             portfolioSelectors[i].classList.remove('active');
         }
