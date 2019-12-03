@@ -132,10 +132,15 @@ body {
     .img {
       width: 90%;
       margin: 0 auto;
+      position: relative;
     }
     img {
       width: 100%;
-      border-radius: 2%;
+      &.screen {
+        position: absolute;
+        padding: 4%;
+        box-sizing: border-box;
+      }
     }
     p {
       line-height: 1.5em;
