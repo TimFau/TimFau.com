@@ -22,13 +22,14 @@ gulp.task('scripts', function(done) {
 //Watch task
 gulp.task('default',function() {
     browserSync.init({
-        server: {
-            baseDir: "./"
-        }
+        // server: {
+        //     baseDir: "./"
+        // }
+        proxy: "http://localhost/TIMFAU.COM"
     });
     gulp.watch('css/src/*.scss', gulp.series('styles'));
     gulp.watch('js/src/*.js', gulp.series('scripts'));
     gulp.watch('css/dest/*.css').on("change", reload);
     gulp.watch('js/dest/*.js').on("change", reload);
-    gulp.watch('*.html').on("change", reload);
+    gulp.watch('*.php').on("change", reload);
 });
