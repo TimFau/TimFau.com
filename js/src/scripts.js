@@ -1,28 +1,33 @@
-VANTA.WAVES({
-    el: "#intro",
-    color: 0x3d454a
-})
 document.addEventListener("DOMContentLoaded", function() {
-    var portfolioSelectors = document.querySelectorAll('#workCategories span');
-    function portfolioClickHandler(e) {
-        var portfolioItems = document.querySelectorAll('.portfolio-item');
-        var targetItems = document.querySelectorAll('.' + e.target.id + '-project');
-        if (e.target.id === 'all') {
-            targetItems = portfolioItems;
+    AOS.init();
+
+    // Change AOS data for mobile
+    var itemImages = document.querySelectorAll('.portfolio-item .img');
+    var itemMeta = document.querySelectorAll('.portfolio-item .meta');
+    function setMobileAosData() {
+        for (var i = 0; i < itemImages.length; i++) {
+            itemImages[i].setAttribute('data-aos', 'fade-up')
         }
-        console.log(e.target.id);
-        for (var i = 0; i < portfolioSelectors.length; i++) {
-            portfolioSelectors[i].classList.remove('active');
-        }
-        for (var i = 0; i < portfolioItems.length; i++) {
-            portfolioItems[i].classList.remove('show');
-        }
-        for (var i = 0; i < targetItems.length; i++) {
-            targetItems[i].classList.add('show');
-            document.getElementById(e.target.id).classList.add('active');
+        for (var i = 0; i < itemMeta.length; i++) {
+            itemMeta[i].setAttribute('data-aos', 'fade-in')
         }
     }
-    for (var i = 0; i < portfolioSelectors.length; i++) {
-        portfolioSelectors[i].onclick= portfolioClickHandler;
+    function setDesktopAosData() {
+        for (var i = 0; i < itemImages.length; i++) {
+            itemImages[i].setAttribute('data-aos', 'fade-right')
+        }
+        for (var i = 0; i < itemMeta.length; i++) {
+            itemMeta[i].setAttribute('data-aos', 'fade-left')
+        }
     }
+    if (window.innerWidth <= 800) {
+        setMobileAosData()
+    }
+    window.addEventListener("resize", function () {
+        if (window.innerWidth <= 800) {
+            setMobileAosData()
+        } else {
+            setDesktopAosData()
+        }
+    });
 })

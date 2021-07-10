@@ -1,0 +1,82 @@
+.hero {
+    color: white;
+    background: #131212;
+    background-image: url('./../../images/background.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.hero {
+    h1 {
+      font-size: 6em;
+      letter-spacing: 4px;
+      @media screen and ($bp-800) {
+        font-size: 5em;
+      }
+    }
+    h2 {
+      font-family: $secondary-font;
+      margin-bottom: 15px;
+      @media screen and ($bp-800) {
+        font-size: 1.2em;
+      }
+    }
+    ul li {
+      display: inline;
+      padding: 0 5px 0 5px;
+      font-size: 35px;
+      &:hover {
+        opacity: .75;
+      }
+      i {
+        color: white;
+      }
+    }
+    .container-center {
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+    .cta-wrapper {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      height: 100px;
+      .cta-container {
+        width: 100%;
+        height: 100px;
+        position: relative;
+      }
+      .cta-btn {
+        font-weight: 600;
+        margin-bottom: 200px;
+      }
+      .fa-angle-double-down {
+        font-size: 50px;
+        position: absolute;
+        left: 50%;
+        animation: bounce 0.5s infinite linear;
+        &:before {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 0px;
+        }
+      }
+    }
+}
+
+@keyframes bounce {
+    0% { bottom: 45px; }
+    50% { bottom: 30px; }
+    70% { bottom: 10px; }
+    100% { bottom: 45px; }
+}

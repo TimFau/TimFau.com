@@ -1,60 +1,50 @@
+<!DOCTYPE html>
 <html lang="en" class="no-js cookie_used_true">
     <head>
         <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Tim Fau | Front End Web Developer</title>
+        <meta name="description" content="Tim Fau - Front End Web Developer Portfolio">
+        <meta name="keywords" content="Tim Fau, Front-End Web Developer, Web Developer">
+        <meta name="author" content="Tim Fau">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tim Fau - Front End Web Developer Portfolio</title>
         <link rel="stylesheet" media="all" href="css/dest/styles.min.css" />
-        <script src="js/plugins/three.r92.min.js"></script>
-        <script src="js/plugins/vanta.waves.min.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="js/dest/scripts.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </head>
 
     <body>
-        <div id="intro" class="intro">
+        <div id="hero" class="hero">
             <div class="container-center">
-                <h1>Tim Fau</h1>
-                <h3>Front-End Web Developer</h3>
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/tim-fau-10030151/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                    <li><a href="https://github.com/TimFau" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                    <li><a href="https://codepen.io/TimFau/" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+                <h1 data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">Tim Fau</h1>
+                <h2 data-aos="fade-up" data-aos-delay="400" data-aos-duration="750">Front-End Web Developer</h2>
+                <ul data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                    <li><a href="https://www.linkedin.com/in/tim-fau-10030151/" rel="noreferrer" target="_blank" aria-label="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><a href="https://github.com/TimFau" rel="noreferrer" target="_blank" aria-label="Github"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="https://codepen.io/TimFau/" rel="noreferrer" target="_blank" aria-label="CodePen"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
-            <i class="fa fa-angle-double-down" aria-hidden="true"></i>
-        </div>
-        
-        <div class="work" id="work">
-            <div class="container">
-                <div id="workCategories">
-                    <span id="featured" class="active">Featured</span>
-                    <span id="frontEnd">Websites</span>
-                    <span id="javascript">Web Apps</span>
-                    <span id="design">Design</span>
-                    <span id="all">All</span>
-                </div>
-                <?php include 'portfolioItems.php' ?>
-            </div>
-        </div>
-        
-        <div class="contact" id="contact">
-            <div class="container">
-                <h2>Contact Me</h2>
-                <div class="contactForm">
-                    <form action="https://formspree.io/xrggnqdg" method="POST">
-                        <label for="name">Name</label>
-                        <input type="text" name="name">
-                        <label for="email">Email</label>
-                        <input type="email" name="_replyto">
-                        <label for="message">Message</label>
-                        <textarea name="message"></textarea>
-                        <button type="submit" value="Send">Submit</button>
-                    </form>
+            <div class="cta-wrapper">
+                <div class="cta-container">
+                    <i class="fa fa-angle-double-down" aria-hidden="true"></i>
                 </div>
             </div>
         </div>
         
-    <style>
-    @import url('https://fonts.googleapis.com/css?family=Neuton');
-    </style>
+        <div class="projects-container" id="projects" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">
+            <div class="headline-container">
+                <h3 class="headline">Projects</h3>
+            </div>
+            <?php include 'portfolioItems.php' ?>
+        </div>
+        
+        <footer>
+            <div class="links">
+                <a href="TimFau_Resume.pdf" class="button white" download>Resume</a>
+                <a href="mailto:contact@timfau.com" class="button white contact-button">Contact Me</a>
+            </div>
+            <span class="copyright">&copy; <?php echo date("Y"); ?> Tim Fau</span>
+        </footer>
     <script src="https://use.fontawesome.com/40e6a83d72.js"></script>
     </body>
   </html>

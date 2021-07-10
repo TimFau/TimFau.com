@@ -10,7 +10,7 @@ body {
   background-color: black;
   width: 100%; }
 
-.intro {
+.hero {
   color: white;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("http://i.imgur.com/uLET3f8.jpg");
   background-position: center;
@@ -18,29 +18,29 @@ body {
   height: 100vh;
   margin: 0 auto;
   text-align: center; }
-  .intro h1 {
+  .hero h1 {
     padding-top: 40vh;
     font-size: 6em;
     font-family: 'Neuton', serif;
     letter-spacing: 4px; }
-  .intro h3 {
+  .hero h3 {
     font-family: Arial, sans-serif; }
-  .intro .fa-angle-double-down {
+  .hero .fa-angle-double-down {
     font-size: 50px;
     position: absolute;
     bottom: 25px;
     animation: bounce 0.5s infinite linear; }
-  .intro ul {
+  .hero ul {
     padding-top: 20px; }
-  .intro ul li {
+  .hero ul li {
     display: inline;
     padding-right: 10px;
     font-size: 35px; }
-    .intro ul li:hover {
+    .hero ul li:hover {
       opacity: .75; }
-    .intro ul li i {
+    .hero ul li i {
       color: white; }
-  .intro .inTouch {
+  .hero .inTouch {
     display: inline-block; }
 
 @keyframes bounce {
@@ -102,8 +102,6 @@ body {
         font-weight: bold; }
 
 .contact {
-  height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("http://i.imgur.com/owLiZhv.jpg");
   color: white; }
   .contact h2 {
     padding: 20px 0;
@@ -164,7 +162,7 @@ body {
     display: none; } }
 
 @media screen and (max-height: 750px) {
-  .intro h1 {
+  .hero h1 {
     padding-top: 25vh; } }
 
 @media screen and (max-height: 550px) {

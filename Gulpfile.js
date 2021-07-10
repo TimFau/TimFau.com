@@ -27,7 +27,7 @@ gulp.task('default',function() {
         // }
         proxy: "http://localhost/TIMFAU.COM"
     });
-    gulp.watch('css/src/*.scss', gulp.series('styles'));
+    gulp.watch('css/src/**/*.scss', gulp.series('styles'));
     gulp.watch('js/src/*.js', gulp.series('scripts'));
     gulp.watch('css/dest/*.css').on("change", reload);
     gulp.watch('js/dest/*.js').on("change", reload);
