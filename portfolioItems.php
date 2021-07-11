@@ -16,6 +16,20 @@ $portfolioItems = array(
         "featured" => true
     ),
     1 => array(
+        "name" => "Shop Sonesta",
+        "description" => "Worked as a Frontend Developer on this project for my employer. Based on the PSD design, I implemented & styled the frontend components with our internal design framework. Coded the homepage animations with GSAP.",
+        "categories" => array(
+            "featured", "CSS", "javascript"
+        ),
+        "skills" => array (
+            "HTML", "CSS", "Javascript"
+        ),
+        "image" => "son.jpg",
+        "websiteURL" => "https://blankrefer.com/?https://www.shopsonesta.com/index.aspx",
+        "sourceURL" => "",
+        "featured" => true
+    ),
+    2 => array(
         "name" => "Rockin’ With Purpose",
         "description" => "Rockin’ with Purpose is a music blog geared towards promoting Christian Rock and Roll with purpose. They were  looking for a hip new image for the site, taking it from a simple free-template blog to a scalable, hip web magazine. I designed the new logo, branding & website design and built a Wordpress theme using <a href='https://underscores.me/'><i>underscores</i></a> as the foundation.",
         "categories" => array(
@@ -27,20 +41,6 @@ $portfolioItems = array(
         "image" => "rockin_with_purpose.jpg",
         "websiteURL" => "https://rockinwithpurpose.com/",
         "sourceURL" => "https://github.com/TimFau/Rockin-With-Purpose-Theme-",
-        "featured" => true
-    ),
-    2 => array(
-        "name" => "Home2 Retail Site",
-        "description" => "Worked as the Frontend Developer on this project for my employer. I took the PSD design & implemented the frontend components with our internal framework, including the styling & interactivity on the homepage.",
-        "categories" => array(
-            "featured", "frontend"
-        ),
-        "skills" => array (
-            "HTML", "CSS", "Javascript"
-        ),
-        "image" => "h2.jpg",
-        "websiteURL" => "http://blankrefer.com/?https://www.shophome2.com/",
-        "sourceURL" => "",
         "featured" => true
     ),
     3 => array(
@@ -56,93 +56,40 @@ $portfolioItems = array(
         "websiteURL" => "https://faudesign.com/the-puttytribe/",
         "sourceURL" => "",
         "featured" => true
-    ),
-    4 => array(
-        "name" => "Numotus",
-        "description" => "Numotus wanted a one page responsive website to showcase his music/shows and establish a professional online presence. I built a one-page site from scratch and then used Couch CMS to give him an easy way to manage his own content. He wanted the video playlist to be a central element on the site, so I added it above the floating nav bar in the starting viewport. Most of the content is aggregated from his various online handles leading to minimal site maintenance.",
-        "categories" => array(
-            "design", "frontend"
-        ),
-        "skills" => array (
-            "HTML", "CSS"
-        ),
-        "image" => "numotus.jpg",
-        "websiteURL" => "https://numotus.com/",
-        "sourceURL" => "",
-        "featured" => false
-    ),
-    5 => array(
-        "name" => "Random Quote Machine",
-        "description" => "Project for Free Code Camp's Front End Libraries Project.
-        <span><strong>Objective: </strong>To build a 'quote machine' using React that generates a new quote every time you click a button and that allows you to share it on Twitter. View full objective <a href='https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-random-quote-machine' target='_blank'>here</a>.</span>",
-        "categories" => array(
-            "javascript"
-        ),
-        "skills" => array (
-            "CSS", "Javascript"
-        ),
-        "image" => "random_quote_machine.jpg",
-        "websiteURL" => "https://timfau.github.io/random-quote-machine/",
-        "sourceURL" => "https://github.com/TimFau/random-quote-machine/",
-        "featured" => false
-    ),
-    6 => array(
-        "name" => "Drum Machine",
-        "description" => "Project for Free Code Camp's Front End Libraries Project. <span><strong>Objective: </strong>To build a 'drum machine' using React with 9 clickable drum pag elements that play an audio sample on click. They should also be triggered using keys on the keyboard and show the sound & key in the display when played. View full objective <a href='https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-drum-machine' target='_blank'>here</a>.</span>",
-        "categories" => array(
-            "javascript"
-        ),
-        "skills" => array (
-            "CSS", "Javascript", "React"
-        ),
-        "image" => "drum_machine.jpg",
-        "websiteURL" => "https://timfau.github.io/drum-machine/",
-        "sourceURL" => "https://github.com/TimFau/drum-machine",
-        "featured" => false
-    ),
-    7 => array(
-        "name" => "Pomodoro Clock",
-        "description" => " Project for Free Code Camp's Front End Libraries Project. <span><strong>Objective: </strong>To build a functioning Pomodoro clock using React. View full objective <a href='https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-pomodoro-clock' target='_blank'>here</a>.</span>",
-        "categories" => array(
-            "javascript"
-        ),
-        "skills" => array (
-            "CSS", "Javascript", "React"
-        ),
-        "image" => "pomodoro_clock.jpg",
-        "websiteURL" => "https://codepen.io/TimFau/full/abbGaLJ",
-        "sourceURL" => "",
-        "featured" => false
     )
 );
 ?>
 <!-- Render Portfolio Items -->
 <?php for($i = 0; $i < count($portfolioItems); $i++): ?>
-    <div class="portfolio-item<?php 
+    <div class="portfolio-item-wrapper <?php 
         for($j = 0; $j < count($portfolioItems[$i]["categories"]); $j++) {
             echo ' ' . $portfolioItems[$i]["categories"][$j] . '-project ';
         }
         echo ($portfolioItems[$i]["featured"] ? 'show' : 'hide')
         ?>">
-        <div class="img">
-            <img class="screen" src="images/portfolio/<?php echo $portfolioItems[$i]["image"] ?>">
-            <img class="monitor" src="images/cutout_screen.png">
-        </div>
-        <div class="meta">
-            <h3><?php echo $portfolioItems[$i]["name"] ?></h3>
-            <h4><em><?php 
-            $skillsCount = count($portfolioItems[$i]["skills"]);
-            for($k = 0; $k < $skillsCount; $k++){
-                echo $portfolioItems[$i]["skills"][$k] . ($k < $skillsCount - 1 ? ' | ' : '');
-            }
-            ?></em></h4>
-            <p><?php echo $portfolioItems[$i]["description"] ?></p>
-            <?php if ($portfolioItems[$i]["websiteURL"] !== ""): ?>
-                <button><a href="<?php echo $portfolioItems[$i]["websiteURL"] ?>" target="_blank">View Website</a></button>
-            <?php endif ?>
-            <?php if ($portfolioItems[$i]["sourceURL"] !== ""): ?>
-                <button><a href="<?php echo $portfolioItems[$i]["sourceURL"] ?>" target="_blank">View Source</a></button>
-            <?php endif ?>
+        <div class="portfolio-item">
+            <div class="img" data-aos="fade-right" data-aos-delay="700">
+                <img class="screen" src="images/portfolio/<?php echo $portfolioItems[$i]["image"] ?>" alt="">
+                <img class="monitor" src="images/cutout_screen.png" alt="">
+            </div>
+            <div class="meta" data-aos="fade-left" data-aos-delay="600" data-aos-duration="700">
+                <h3><?php echo $portfolioItems[$i]["name"] ?></h3>
+                <h4><em><?php 
+                $skillsCount = count($portfolioItems[$i]["skills"]);
+                for($k = 0; $k < $skillsCount; $k++){
+                    echo $portfolioItems[$i]["skills"][$k] . ($k < $skillsCount - 1 ? ' | ' : '');
+                }
+                ?></em></h4>
+                <p><?php echo $portfolioItems[$i]["description"] ?></p>
+                <div class="button-container">
+                    <?php if ($portfolioItems[$i]["websiteURL"] !== ""): ?>
+                        <a href="<?php echo $portfolioItems[$i]["websiteURL"] ?>" target="_blank" rel="noreferrer" class="button">View Website</a>
+                    <?php endif ?>
+                    <?php if ($portfolioItems[$i]["sourceURL"] !== ""): ?>
+                        <a href="<?php echo $portfolioItems[$i]["sourceURL"] ?>" target="_blank" rel="noreferrer" class="button">Github Repo</a>
+                    <?php endif ?>
+                </div>
+            </div>
         </div>
     </div>
 <? endfor ?>
