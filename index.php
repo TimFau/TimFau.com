@@ -47,8 +47,8 @@
         
         <footer>
             <div class="links">
-                <a href="TimFau_Resume.pdf" class="button white" download>Resume</a>
-                <a href="mailto:contact@timfau.com" class="button white contact-button">Contact Me</a>
+                <a href="TimFau_Resume.pdf" download>Resume</a>
+                <a href="mailto:contact@timfau.com" class="contact-button">Contact Me</a>
             </div>
             <span class="copyright">&copy; <?php echo date("Y"); ?> Tim Fau</span>
         </footer>

@@ -3,15 +3,16 @@ footer {
     color: white;
     text-align: center;
     padding: 25px;
-    .copyright {
-        @media screen and (min-width: 400px) {
-            margin-right: 25px;
-        }
-    }
     .links {
         display: flex;
         justify-content: center;
         margin-bottom: 25px;
+        a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 10px;
+            font-weight: bold;
+        }
         @media screen and (max-width: 400px) {
             flex-direction: column;
             .button {

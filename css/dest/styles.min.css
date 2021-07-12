@@ -201,13 +201,15 @@ footer {
   color: white;
   text-align: center;
   padding: 25px; }
-  @media screen and (min-width: 400px) {
-    footer .copyright {
-      margin-right: 25px; } }
   footer .links {
     display: flex;
     justify-content: center;
     margin-bottom: 25px; }
+    footer .links a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0 10px;
+      font-weight: bold; }
     @media screen and (max-width: 400px) {
       footer .links {
         flex-direction: column; }

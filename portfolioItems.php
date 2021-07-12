@@ -3,12 +3,12 @@
 $portfolioItems = array(
     0 => array(
         "name" => "Language Learning App",
-        "description" => "A personal project I'm working on to help me practice vocabulary and grammar for new languages, pulling the words from Google Sheets documents. Idea came after seeing this tip. I liked having a list to add all the words I wanted to learn, but wanted a way to quiz myself on them. Project still in development; I have a lot of ideas for functionality I still want to add and I'm still adressing some bugs.",
+        "description" => "Personal project I'm working on to gain experience working with React while creating an application to practice vocabulary and grammar for new languages. Built with React and <a href='https://material-ui.com/' target='_blank' rel='noreferrer'>Material-UI</a>. Data is pulled from Google Sheets documents. Project is still in development; I'm working on building a backend with account functionality.",
         "categories" => array(
             "featured", "javascript"
         ),
         "skills" => array (
-            "CSS", "Javascript", "React"
+            "Javascript", "React"
         ),
         "image" => "language_learning_app.jpg",
         "websiteURL" => "https://timfau.github.io/language-learning-app/",
@@ -17,12 +17,12 @@ $portfolioItems = array(
     ),
     1 => array(
         "name" => "Shop Sonesta",
-        "description" => "Worked as a Frontend Developer on this project for my employer. Based on the PSD design, I implemented & styled the frontend components with our internal design framework. Coded the homepage animations with GSAP.",
+        "description" => "Worked as a Frontend Developer on this project for my employer. Based on the PSD design, I implemented the homepage & styled the reamining components/pages with our internal design framework. Coded the homepage animations with GSAP.",
         "categories" => array(
             "featured", "CSS", "javascript"
         ),
         "skills" => array (
-            "HTML", "CSS", "Javascript"
+            "CSS", "Javascript"
         ),
         "image" => "son.jpg",
         "websiteURL" => "https://blankrefer.com/?https://www.shopsonesta.com/index.aspx",
@@ -31,32 +31,32 @@ $portfolioItems = array(
     ),
     2 => array(
         "name" => "Rockin’ With Purpose",
-        "description" => "Rockin’ with Purpose is a music blog geared towards promoting Christian Rock and Roll with purpose. They were  looking for a hip new image for the site, taking it from a simple free-template blog to a scalable, hip web magazine. I designed the new logo, branding & website design and built a Wordpress theme using <a href='https://underscores.me/'><i>underscores</i></a> as the foundation.",
+        "description" => "Rockin’ with Purpose is a music blog that was looking for a hip new image for the site. I designed the new logo, branding & website design and built a Wordpress theme using <a href='https://underscores.me/'><i>underscores</i></a> as the foundation.",
         "categories" => array(
             "featured", "design", "frontend"
         ),
         "skills" => array (
-            "HTML", "CSS", "PHP", "Wordpress"
+            "CSS", "PHP", "Wordpress"
         ),
         "image" => "rockin_with_purpose.jpg",
         "websiteURL" => "https://rockinwithpurpose.com/",
         "sourceURL" => "https://github.com/TimFau/Rockin-With-Purpose-Theme-",
         "featured" => true
-    ),
-    3 => array(
-        "name" => "The Puttytribe",
-        "description" => "The Puttytribe is a member-only online community for multipotentialites. Their old website was powered by Ning, which they wanted to get away from in favor of a solution with more freedom and room to develop as needed. I got the opportunity to join their team as the Front End Web Developer as we built a custom solution with WordPress and Discourse.",
-        "categories" => array(
-            "featured", "frontend"
-        ),
-        "skills" => array (
-            "HTML", "CSS", "Javascript", "Wordpress"
-        ),
-        "image" => "puttytribe.jpg",
-        "websiteURL" => "https://faudesign.com/the-puttytribe/",
-        "sourceURL" => "",
-        "featured" => true
     )
+    // 3 => array(
+    //     "name" => "The Puttytribe",
+    //     "description" => "The Puttytribe is a member-only online community that was powered by Ning, which they wanted to get away from in favor of a solution with more freedom. I got the opportunity to join their team as a Front End Web Developer as we built a custom solution with WordPress and Discourse. The site is member only, so the link below goes to a page on my old portfolio with more info.",
+    //     "categories" => array(
+    //         "featured", "frontend"
+    //     ),
+    //     "skills" => array (
+    //         "CSS", "Javascript", "Wordpress"
+    //     ),
+    //     "image" => "puttytribe.jpg",
+    //     "websiteURL" => "https://faudesign.com/the-puttytribe/",
+    //     "sourceURL" => "",
+    //     "featured" => true
+    // )
 );
 ?>
 <!-- Render Portfolio Items -->
